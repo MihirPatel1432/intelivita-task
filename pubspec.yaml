@@ -1,0 +1,60 @@
+name: IntelivitaTask
+description: A new Flutter application.
+publish_to: none
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  auth:
+    path: ./features/auth
+  core:
+    path: ./features/core
+  cupertino_icons: ^1.0.2
+  home:
+    path: ./features/dashboard
+  intl: ^0.17.0
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+
+
+dev_dependencies:
+  build_runner: ^2.4.9
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.2
+
+#dependency_overrides:
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+  assets:
+    - assets/svg/
+    - assets/png/
+
+#TODO: Add Font here if you extra added
+  fonts:
+    - family: ProzaLibre
+      fonts:
+        - asset: assets/fonts/ProzaLibre_Regular.ttf
+        - asset: assets/fonts/ProzaLibre_Bold.ttf
+        - asset: assets/fonts/ProzaLibre_SemiBold.ttf
+          weight: 600
+    - family: OpenSans
+      fonts:
+        - asset: assets/fonts/OpenSans_Regular.ttf
+        - asset: assets/fonts/OpenSans_SemiBold.ttf
+          weight: 600
