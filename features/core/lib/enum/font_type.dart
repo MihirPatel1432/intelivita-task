@@ -1,7 +1,7 @@
 import 'dart:ui';
 
 //TODO:If you added any other font add in this below enum
-enum FontFamilyType { prozaLibre, openSans }
+enum FontFamilyType { prozaLibre }
 
 enum FontWeightType { light, regular, medium, semiBold, bold }
 
@@ -9,8 +9,6 @@ getFontFamilyType(FontFamilyType? fontFamilyType) {
   switch (fontFamilyType) {
     case FontFamilyType.prozaLibre:
       return 'ProzaLibre';
-    case FontFamilyType.openSans:
-      return 'OpenSans';
     case null:
       return '';
   }

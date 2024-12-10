@@ -53,8 +53,3 @@ flutter:
         - asset: assets/fonts/ProzaLibre_Bold.ttf
         - asset: assets/fonts/ProzaLibre_SemiBold.ttf
           weight: 600
-    - family: OpenSans
-      fonts:
-        - asset: assets/fonts/OpenSans_Regular.ttf
-        - asset: assets/fonts/OpenSans_SemiBold.ttf
-          weight: 600

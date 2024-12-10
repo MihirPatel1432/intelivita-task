@@ -3,9 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:core/theme/colors_assets.dart';
 
 class ThemeResource {
-  static var fontType = getFontFamilyType(FontFamilyType.openSans);
-
-  static var openSansFont = getFontFamilyType(FontFamilyType.openSans);
+  static var fontType = getFontFamilyType(FontFamilyType.prozaLibre);
 
   ThemeMode? themeMode;
 
