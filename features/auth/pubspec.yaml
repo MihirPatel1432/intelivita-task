@@ -5,14 +5,15 @@ homepage:
 publish_to: none
 
 environment:
-  sdk: '>=3.0.6 <4.0.0'
-  flutter: ">=1.17.0"
+  sdk: ^3.5.3
 
 dependencies:
   flutter:
     sdk: flutter
   core:
     path: ../core
+  google_sign_in: ^6.2.2
+  cloud_firestore: ^5.4.0
 
 dev_dependencies:
   flutter_test:

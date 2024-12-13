@@ -4,10 +4,14 @@ import 'package:core/global/global_controller.dart';
 import 'package:core/theme/theme_resource.dart';
 import 'package:flutter/material.dart';
 import 'package:IntelivitaTask/routes/app_pages.dart';
+import 'package:IntelivitaTask/firebase_options.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await initServices();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   runApp(const MyApp());
 }
 
@@ -32,8 +36,9 @@ class MyAppState extends State<MyApp> with GlobalController {
     super.initState();
   }
 
-  String get initialRoute =>
-      sharedPreferenceService.getLoggedInStatus() ? AllRoutes.init : AllRoutes.login;
+  String get initialRoute => sharedPreferenceService.getLoggedInStatus()
+      ? AllRoutes.dashboard
+      : AllRoutes.login;
 
   @override
   Widget build(BuildContext context) {
@@ -45,8 +50,6 @@ class MyAppState extends State<MyApp> with GlobalController {
         initialBinding: GlobalBinding(),
         initialRoute: initialRoute,
         theme: ThemeResource().lightTheme,
-        darkTheme: ThemeResource().darkTheme,
-        themeMode: ThemeResource().themeMode ?? ThemeMode.system,
         getPages: AppPages.routes,
         locale: TranslationService.locale,
         fallbackLocale: TranslationService.fallbackLocale,

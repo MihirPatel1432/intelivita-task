@@ -10,24 +10,28 @@ class LoginView extends GetView<LoginController> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        body: SingleChildScrollView(
-          child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 25.0),
-            child: Column(
-              children: <Widget>[
-                SizedBox(
-                  height: 100.h,
-                ),
-                Align(
-                  alignment: AlignmentDirectional.centerStart,
-                  child: Text(
-                    StringConstants.loginTitle,
-                    textAlign: TextAlign.start,
-                    style: context.theme.textTheme.labelMedium,
+        body: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 16.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisSize: MainAxisSize.max,
+            children: <Widget>[
+              Align(
+                alignment: AlignmentDirectional.center,
+                child: Text(
+                  StringConstants.loginTitle,
+                  textAlign: TextAlign.center,
+                  style: context.theme.textTheme.labelLarge?.copyWith(
+                    fontSize: 50.sp
                   ),
                 ),
-              ],
-            ),
+              ),
+              SizedBox(height: 50.h),
+              AppButton(text: 'Login with Google', onTap: (){
+                controller.googleSignBtnTap();
+              })
+            ],
           ),
         ),
       ),

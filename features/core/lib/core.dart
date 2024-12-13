@@ -1,4 +1,4 @@
-library core;
+library;
 
 export './common/widgets/app_button.dart';
 export './common/widgets/app_progress_dialog.dart';
@@ -7,6 +7,8 @@ export './routes/all_routes.dart';
 export './di/di.dart';
 export 'package:flutter_screenutil/flutter_screenutil.dart';
 export 'package:get/get.dart';
+export 'package:firebase_auth/firebase_auth.dart';
+export 'package:firebase_core/firebase_core.dart';
 export './common/logger.dart';
 export './services/network_service.dart';
 export './services/progress_service.dart';
@@ -14,3 +16,5 @@ export './common/strings.dart';
 export './services/shared_preference_service.dart';
 export './common/translation_service.dart';
 export './common/utils.dart';
+export './common/widgets/app_text_field.dart';
+export './APIs/firebase_api.dart';

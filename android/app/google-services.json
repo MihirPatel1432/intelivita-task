@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "617451345231",
+    "project_id": "intelivita-task-881d6",
+    "storage_bucket": "intelivita-task-881d6.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:617451345231:android:c164d56da4985998d1613a",
+        "android_client_info": {
+          "package_name": "com.intelivita.task"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "617451345231-srhe3ter6tek08d6r2ndkaomptmkdbbj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.intelivita.task",
+            "certificate_hash": "ba1904287e69ecce518d5be94bf6b485abc8bdab"
+          }
+        },
+        {
+          "client_id": "617451345231-vi5lt4qbtfjm3nrrhgpdo5qhoasefhre.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAeLuYtCaUbXNdASbVsDf4Clit8H4NGMto"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "617451345231-vi5lt4qbtfjm3nrrhgpdo5qhoasefhre.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "617451345231-o8adht4dcevs8nj9do8g4h987age6mrh.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.intelivita.task"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,19 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-
 class AppButton extends StatelessWidget {
   final Color? bgColor;
   final String text;
   final EdgeInsets? padding;
   final VoidCallback onTap;
+  final bool isEnabled;
 
   const AppButton(
       {super.key,
       this.bgColor,
       required this.text,
       this.padding,
-      required this.onTap});
+      required this.onTap,
+      this.isEnabled = true});
 
   @override
   Widget build(BuildContext context) {
@@ -25,12 +26,13 @@ class AppButton extends StatelessWidget {
             width: double.infinity,
             child: ElevatedButton(
               style: ButtonStyle(
-                backgroundColor: WidgetStateProperty.all(
-                    bgColor ?? context.theme.colorScheme.primary),
+                backgroundColor: WidgetStateProperty.all(isEnabled
+                    ? bgColor ?? context.theme.colorScheme.primary
+                    : Colors.grey),
                 shape: WidgetStateProperty.all(RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(50.0))),
               ),
-              onPressed: () => onTap.call(),
+              onPressed: () => isEnabled ? onTap.call() : null,
               child: Text(
                 text,
                 style: context.theme.textTheme.titleLarge

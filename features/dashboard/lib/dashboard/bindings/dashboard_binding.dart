@@ -9,6 +9,6 @@ class DashboardBinding extends Bindings {
         MainRepositoryImpl(),
         permanent: true);
     DependencyProvider.registerSingleton<DashboardController>(
-        DashboardController(DependencyProvider.get()));
+        DashboardController());
   }
 }
